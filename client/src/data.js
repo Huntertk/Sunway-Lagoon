@@ -74,7 +74,6 @@ export const cardData = [
         ],
         title:"Night Park Admission Ticket",
         desc:"Experience the magic of Sunway Lagoon after sunset at our Night Park. Enjoy dazzling lights, exciting rides, and captivating entertainment for an unforgettable evening adventure. ",
-        type:"bookTypeFour",
         type:"bookTypeThree",
         pricing: {
             adult:50,
@@ -98,6 +97,7 @@ export const cardData = [
         ],
         title:"Combo Admission + Quack Express",
         desc:"Enhance your Sunway Lagoon adventure as an international guest with our Day Admission Ticket, featuring the added convenience of Quack Xpress. Immerse yourself in all the attractions and skip regular lines at selected rides for a day filled with seamless thrills and excitement!",
+        type:"bookTypeFour",
         preference:[
                 {
                     title:"Malaysian",
