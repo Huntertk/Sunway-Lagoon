@@ -173,7 +173,7 @@ export const successBooking = async (req, res, next) => {
                                                                         <table cellpadding="0" cellspacing="0" width="100%">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://i.postimg.cc/3Nd0P7d6/1.jpg" alt style="display: block;" width="455"></a></td>
+                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://i.postimg.cc/SQ3jTkPk/1-1.jpg" alt style="display: block;" width="455"></a></td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
@@ -246,7 +246,7 @@ export const successBooking = async (req, res, next) => {
                                                                                         <table cellpadding="0" cellspacing="0" width="100%">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://i.postimg.cc/CMQqbZ2V/5.jpg" alt style="display: block;" height="200" width-"150"></a></td>
+                                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://i.postimg.cc/qqhqJ5zP/5.jpg" alt style="display: block;" height="200" width-"150"></a></td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
