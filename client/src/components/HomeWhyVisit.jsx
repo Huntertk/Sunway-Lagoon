@@ -23,10 +23,6 @@ const HomeWhyVisit = () => {
                         <img src="https://i.postimg.cc/mD6hGs23/6.jpg" alt="" /><br />
                         Dive into high-speed slides, explore wildlife habitats, and enjoy family-friendly activities, creating lasting memories in Malaysia's premier theme park.<br/>
                     </p>
-                    <p>
-                        <img src="https://i.postimg.cc/qqhqJ5zP/5.jpg" alt="" /><br />
-                        For high-octane thrills, head to the Extreme Park. Take on bungee jumping,  go-karting, paintball, and archery for an adrenaline-packed adventure.<br/> 
-                    </p>
                     
             </div>
         </div>

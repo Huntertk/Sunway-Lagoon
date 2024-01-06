@@ -187,7 +187,7 @@ export const thingsTodo = [
     {
         id: uuidv4(),
         desc:"Experience adrenaline-pumping roller coasters, wildlife encounters, and cultural showsinone dynamic theme park.",
-        image: "https://i.postimg.cc/Z5cdDX3H/Malaysia-Sunway-Lagoon-Amusement-and-Water-Park-2-1100x500-1.jpg"
+        image: "https://i.postimg.cc/cHJ6jHZ4/4-1.jpg"
     },
     
 ]
