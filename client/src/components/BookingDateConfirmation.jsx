@@ -12,6 +12,7 @@ import PaxModal from './PaxModal';
 import axios from 'axios'
 import moment from 'moment';
 import PreferenceTour from './PreferenceTour';
+import LoadingSpinner from './LoadingSpinner';
 
 
 function isPastDate(date) {
@@ -107,33 +108,82 @@ const BookingDateConfirmation = () => {
         const [calenderOpen, setCalenderOpen] = useState(false)
         const [blockedDates, setBlockedDates] = useState([])
         const disabledDates = blockedDates?.map((dates) => new Date(dates.blockDates))
+        const [isLoading, setIsLoading] = useState(false)
        
 
         const disabledDays = [
             ...disabledDates
           ];
 
-          const getBlockDates = async () => {
+          const getBookTypeOneBlockDates = async () => {
             try {
+                setIsLoading(true)
                 const {data} = await axios.get('/api/v1/booktype-one-dates-manage/block-dates')
                 setBlockedDates(data.blockDates)
+                setIsLoading(false)
+              } catch (error) {
+                  console.log(error);
+              }
+          }
+          const getBookTypeTwoBlockDates = async () => {
+            try {
+
+                setIsLoading(true)
+                const {data} = await axios.get('/api/v1/booktype-two-dates-manage/block-dates')
+                setBlockedDates(data.blockDates)
+                setIsLoading(false)
+              } catch (error) {
+                  console.log(error);
+              }
+          }
+
+          const getBookTypeThreeBlockDates = async () => {
+            try {
+                setIsLoading(true)
+                const {data} = await axios.get('/api/v1/booktype-three-dates-manage/block-dates')
+                setBlockedDates(data.blockDates)
+                setIsLoading(false)
+              } catch (error) {
+                  console.log(error);
+              }
+          }
+
+          const getBookTypeFourBlockDates = async () => {
+            try {
+                setIsLoading(true)
+                const {data} = await axios.get('/api/v1/booktype-four-dates-manage/block-dates')
+                setBlockedDates(data.blockDates)
+                setIsLoading(false)
               } catch (error) {
                   console.log(error);
               }
           }
         useEffect(() => {
             if(type === 'bookTypeOne'){
-                getBlockDates()
+                getBookTypeOneBlockDates()
+                return
+            }else if(type === 'bookTypeTwo'){
+                getBookTypeTwoBlockDates()
+                return
+            }else if(type === 'bookTypeThree'){
+                getBookTypeThreeBlockDates()
+                return
+            }else if(type === 'bookTypeFour'){
+                getBookTypeFourBlockDates()
                 return
             }
           },[])
 
-        if(!type){
-            return <Navigate to="/" />
-        }
-        const defaultMonth = new Date(Date.now());
-
-        const navigate = useNavigate()
+          
+          if(!type){
+              return <Navigate to="/" />
+            }
+            const defaultMonth = new Date(Date.now());
+            
+            const navigate = useNavigate()
+            if(isLoading){
+              return <LoadingSpinner />
+            }
   return (
     <section className='bookingDateConfirmationMainContainer'>
         <div className="bookingDateWrapper">
